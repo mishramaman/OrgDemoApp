@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mqtlogo"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About us"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvAbout"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Careers"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="10dp"
+            android:onClick="careerAlert"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact us"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/contactUs"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/search"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoStart="true"
+                android:flipInterval="4000">
+
+                    <ImageView
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/aaaa" />
+
+                    <ImageView
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/bbbb" />
+
+                    <ImageView
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/cccc" />
+
+                    <ImageView
+                        android:layout_width="370dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/dddd" />
+
+
+            </ViewFlipper>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Marquistech"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About us"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We are a team of skilled Engineers and \nBusiness Strategists coming from diverse \n cultures and having unique perspectives.\n We focus on streamlining the market\n strategy for terminal devices for its\n extensive customer portfolio of more\n than 27 OEMs/ODMs, chipset\n manufacturers, corporate companies and\n telecom operators around the world.\n Marquistech is an independent\n organization having an impressive track\n record of providing Best-in-class services\n to customers across the globe since\n the last 15 years."
+                android:textAlignment="center"
+                android:textStyle="italic"
+                android:textSize="12sp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="600dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/aaa"/>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textViewBlue"
+                android:orientation="vertical"
+                android:padding="15dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15 years of experience"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="27 - Ongoing Projects"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="493 - Finished Cases"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="350 + - Satisfied customers"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="950 + - Employees Worldwide"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tv2grey"
+                android:padding="8dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Copyright © 2023 Marquis Technologies Pvt Ltd |\nISO 9001:2008 Certified Company"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:background="@color/tv2grey">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_mail_24"
+                    android:background="@drawable/minilogobutton"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_phone_24"
+                    android:background="@drawable/minilogobutton"
+                    android:layout_weight="1"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_edit_location_24"
+                    android:background="@drawable/minilogobutton"
+                    android:layout_weight="1"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
